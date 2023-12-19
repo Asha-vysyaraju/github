@@ -1,0 +1,23 @@
+#heading{
+    text-align:center;
+    
+}
+th{
+    background-color: beige;
+    color:black
+ 
+}
+td{
+    background-color: aliceblue;
+    color:gray
+}
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#8E8887 
+}
+h1,h2{
+    color:lightslategray
+}
+#snippet{
+    background-color: beige;
+}

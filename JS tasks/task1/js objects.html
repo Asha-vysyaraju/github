@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Objects</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="heading">JavaScript Objects</h1><hr>
+  <p> In JavaScript, almost "everything" is an object.</p> 
+<ul>
+
+<li>Booleans can be objects (if defined with the <span style="color:red">new</span> keyword)</li>
+<li>Numbers can be objects (if defined with the <span style="color:red">new</span> keyword)</li>
+<li>Strings can be objects (if defined with the <span style="color:red">new</span> keyword)</li>
+<li>Dates are always objects</li>
+<li>Maths are always objects</li>
+<li>Regular expressions are always objects</li>
+<li>Arrays are always objects</li>
+<li>Functions are always objects</li>
+<li>Objects are always objects</li>
+</ul>
+<p>All JavaScript values, except primitives, are objects.</p>
+<h2>Objects are Variables</h2>
+<p>JavaScript variables can contain single values:</p>
+<p id="snippet">let person = "John Doe";</p>
+<p>JavaScript variables can also contain many values.</p>
+<p id="snippet">let person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</p>
+<h2>Object Methods</h2>
+<p>Methods are actions that can be performed on objects.<br>
+
+Object properties can be both primitive values, other objects, and functions.<br>
+
+An object method is an object property containing a function definition.</p>
+<table border="1">
+<tr><th>Property</th><th>Value</th></tr>
+<tr><td>firstName</td><td>John</td></tr>
+<tr><td>lastName</td><td>Doe</td></tr>
+<tr><td>age</td><td>50</td></tr>
+<tr><td>eyeColor</td><td>blue</td></tr>
+<tr><td>fullName</td><td>function() {return this.firstName + " " + this.lastName;}</td></tr>
+</table>
+<h2>Creating a JavaScript Object</h2>
+<p>With JavaScript, you can define and create your own objects.<br>
+
+    There are different ways to create new objects:
+    <ul>
+        <li> Create a single object, using an object literal.</li>
+        <li> Create a single object, with the keyword new.</li>
+        <li>Define an object constructor, and then create objects of the constructed type.</li>
+        <li>Create an object using Object.create().</li>
+    
+    </ul></p>
+    <h2>Using an Object Literal</h2>
+    <p id="snippet">const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</p>
+    <h2>Using the JavaScript Keyword new</h2>
+    <p id="snippet">const person = new Object();
+        person.firstName = "John";
+        person.lastName = "Doe";
+        person.age = 50;
+        person.eyeColor = "blue";</p>
+	
+	
+	
+	
+	
+
+</table>
+
+</body>
+</html>
