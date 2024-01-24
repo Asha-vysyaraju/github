@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="spanTag"></span>
+    <div id="divTag" style="color:blue">
+    This is example<span style="display:none">hiddeen</span>text
+</div>
+    <div id="divTag1" style="color:blue">
+        this is example <span style="display:none">hidden</span>text</div>
+
+    <script>
+        var spanTag=document.getElementById("spanTag");
+        console.log(spanTag)
+        // const p= new Promise();
+        // console.log(p)
+        //Uncaught TypeError: Promise resolver undefined is not a function
+        //Uncaught TypeError: Promise constructor cannot be invoked without 'new'
+
+        const p1=new Promise((resolve,reject)=>{
+          
+            resolve("Hello")
+            reject("Welcome")
+          
+        })
+        console.log(p1)
+        p1.then((res)=>{
+            spanTag.textContent=res
+        }).catch((error)=>{
+            console.error("error")
+        })
+        console.log(p1)
+     var a=  document.getElementById("divTag").innerText
+       var b= document.getElementById("divTag1").textContent
+       console.log(a)
+       console.log(b)
+        let age=20
+       const p2=new Promise((resolve,reject)=>{
+          if(age>15){resolve("Hello")}
+          else{  reject("Welcome")}
+        
+        
+      })
+      console.log(p2)
+
+      const result=1;
+      const successvalue=new Promise((resolve,reject) =>{
+  resolve("Promise Resolved")
+  reject("Rejected so its throwing error")
+      })
+      successvalue.then(function success(result){
+console.log(result)
+
+      }).catch((err)=>{
+        console.log("Rejected")
+      })
+    </script>
+</body>
+</html>
