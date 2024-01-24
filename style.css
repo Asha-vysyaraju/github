@@ -1,0 +1,9 @@
+.card{
+    margin :20px;
+    box-shadow:0 0 10px silver;
+    transition:300ms all;
+    background-size: cover;
+    background-position: center;
+   width:300px;
+
+}
